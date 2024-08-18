@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>File Viewer</title>
+  <style>
+    /* Style for the form */
+    form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+    }
+    label, input {
+      margin-bottom: 20px;
+    }
+    /* Style for the file contents */
+    pre {
+      margin-top: 50px;
+      white-space: pre-wrap;
+      word-wrap: break-word;
+    }
+  </style>
+</head>
+<body>
+
+  <form>
+    <label for="file-input">Choose a file:</label>
+    <input type="file" id="file-input">
+    <button type="submit" onclick="showFileContents(event)">Submit</button>
+  </form>
+
+  <pre id="file-contents" style="display:none;"></pre>
+
+  <script>
+    function showFileContents(event) {
+      event.preventDefault(); // Prevent the form from submitting and refreshing the page
+
+      const fileInput = document.getElementById('file-input');
+      const file = fileInput.files[0];
+
+      const reader = new FileReader();
+      reader.onload = function(event) {
+        const fileContents = event.target.result;
+        const fileContentsElement = document.getElementById('file-contents');
+        fileContentsElement.innerText = fileContents;
+        fileContentsElement.style.display = 'block';
+      };
+      reader.readAsText(file);
+    }
+  </script>
+
+</body>
+</html>

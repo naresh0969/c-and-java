@@ -1,0 +1,76 @@
+
+body{
+    background-color: lightgray;
+    font-style: oblique;
+    font-size:x-large
+}
+.home{
+    background-color: green;
+}
+
+p.first{
+    
+    color: rgb(172, 13, 13);
+    font-family:Times, serif;;
+    font-size: 150%;
+    font-style: oblique;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 0%;
+}
+p.address{
+    padding-left:40% ;
+}
+p.about{
+    padding-left: 38%;
+}
+h1{
+    padding-left: 40%;
+    padding-top: 10%;
+    color: rgb(0, 0,0);
+
+}
+h2{
+    color: rgba(240, 248, 255, 0);
+}
+
+#data{
+    background-color:aliceblue;
+
+    padding-left: 15%;
+    
+    padding-right: 15%;
+    padding-bottom: 5%;
+    border: 3px solid black;
+    /* border-radius: 5%; */
+    margin:40px 10px 40px 10px;
+    
+    /* border-right: 10px;
+    border-left: 10px; */
+}
+.center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10px,330px);
+
+    
+   
+    
+    
+}
+button{
+    padding-left: 45%;
+    border: none;
+    background-color: green;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    color:white;
+    border-radius: 16px;
+    cursor: pointer;
+    animation:alternate 2s linear infinite;
+}
+#data.legend{
+    font-weight: 700;
+}

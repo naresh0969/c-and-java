@@ -1,0 +1,1 @@
+//Write a C program that shows the binary equivalent of a given positive number 0 to 255.

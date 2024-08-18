@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta title="author" content="Naresh Damera">
+        <link rel="icon" href="" type="image">
+    </head>
+    <body>
+        <header>
+            <h1>Page title</h1>
+            <nav>
+
+            </nav>
+        </header>
+        <main>
+            <article id="Name">
+                <!--article contains a complete information,it is group of sections.-->  
+            
+                <section>
+                    <!--section is used to write a short about something-->
+                </section>
+                <section>
+                    <aside>
+                        <!--aside is used to add something which is not much important.
+                        mostly it is used to prepare the quizes-->
+                        <details>
+                            <summary>
+                                write the question here.
+                            </summary>
+                            <p>write it's answer here.</p>
+                        </details>
+                    </aside>
+                </section>
+                <section>
+                    <form action="https://httpbin.org/get" method="get">
+                        <fieldset>
+                            <legend><strong>Education Info</strong></legend>
+                        <!--the inputed data sends to the link in the action attribute -->
+                        <p>
+                        <!--Taking input from the user-->
+                        <lable for="firstName">First Name :</lable>
+                        <input type="text" name="firstName" id="firstName" placeholder="Naresh" autocomplete="on"
+                        required autofocus>
+
+
+                        <!--*the container of for,name,id should match ex:fistName
+                        *content in the placeholder shows on the input area.
+                        *if autocomplete  in on it stores data and autofills next time.
+                        *required :the next page will not open untill this input is given'
+                        *autofocus :pages goes to this ssection directly-->
+                        </p>
+
+
+                        <p>
+                            
+                        <lable for="lastName">last Name :</lable>
+                        <input type="text" name="lastName" id="lastName" placeholder="Damera" autocomplete="on"
+                        required>
+                        </p>
+                        <p>
+                            
+                            <lable for="password">Password:</lable>
+                            <input type="password" name="password" id="password" placeholder="password"
+                            required>
+                        </p>
+                        <p>
+                            
+                            <lable for="phone">phone:</lable>
+                            <input type="tel" name="phone" id="phone" placeholder="2222222222"
+                            pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
+                            required>
+                        </p>
+                        <p>
+                            
+                            <lable for="decade">Favorite decade:</lable>
+                            <input type="number" name="decade" id="decade" min="1950" max="2020" step="10"
+                            value="1980">
+                        </p>
+                        <p>
+                            
+                            <lable for="class">Studying:</lable>
+                            <select name="class" id="class">
+                                <optgroup label="High School">
+                                    <option value="7th class">7th class</option>
+                                    <option value="8th class">8th class</option>
+                                    <option value="9th class">9th class</option>
+                                    <option value="10th class">10th class</option>
+                                </optgroup>
+                                <optgroup label="Intermidiate">
+                                    <option value="1st year">1st year</option>
+                                    <option value="2nd year">2nd year</option>
+                                </optgroup>
+                            </p>    
+                        
+                            <p>
+                            
+                                    <lable for="class">Studying:</label>
+                                        <input type="text" name="class" id="class" list="education-list">
+                                        <datalist id="education-list">
+                                            <option value="7th class">7th Class</option>
+                                            <option value="8th class">8th class</option>
+                                            <option value="9th class">9th class</option>
+                                            <option value="10th class">10th class</option>
+                                            <option value="1st year">1st year</option>
+                                            <option value="2nd year">2nd year</option>
+                                        </datalist>
+                                    </p>
+                            </fieldset>
+                            </select>
+                        </p>
+                        <p>
+                            <fieldset>
+                                <legend>Fav Subject</legend>
+                                <p>
+                                    <input type="radio" name="subject" id="maths" value="maths">
+                                    <lable for="maths">Maths</lable>
+                                </p>
+                                <p>
+                                    <input type="radio" name="subject" id="maths" value="maths">
+                                    <lable for="maths">Maths</lable>
+                                </p>
+                                <p>
+                                    <input type="radio" name="subject" id="science" value="science">
+                                    <lable for="science">Science</lable>
+                                </p>
+                                <p>
+                                    <input type="radio" name="subject" id="english" value="english">
+                                    <lable for="english">English</lable>
+                                </p>
+                            </fieldset>
+                        </p>
+                        <br>
+                        <!---->
+                        <fieldset>
+                            <legend>Hobbies</legend>
+                            <p>
+                                <input type="checkbox" name="hobbies" id="readingbooks" value="readingbooks">
+                                <lable for="readingbooks">Reading Books</lable>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="hobbies" id="watchingmovies" value="watchingmovies">
+                                <lable for="watchingmovies">Watching Movies</lable>
+                            </p>
+                            <p>
+                                <input type="checkbox" name="hobbies" id="playingcricket" value="playingcricket">
+                                <lable for="playingcricket">Playing Crickeet</lable>
+                            </p>
+                        </fieldset>
+                        <br>
+                        <!---->
+                        <fieldset>
+                            <legend>Feedback</legend>
+                            <!--<label for="feedback">Feedback :</label>-->
+                            <br>
+                            <textarea name="feedback" id="feedback" cols="30" rows="10" placeholder="Text Here"></textarea>
+                        </fieldset>
+                        <br>
+                        <!---->
+                        <button type="submit">Submit</button>
+                        <button type="submit" formaction="http://httpbin.org/post" formmethod="post">Post</button>
+                        <button type="reset">Reset</button>
+                    </form>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <!--Address and other details-->
+        </footer>
+    </body>
